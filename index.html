@@ -12,7 +12,7 @@
     />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
-  <body class=" bg-[#328E6E]">
+  <body class=" bg-green-100">
     <header>
       <!-- navbar section  -->
       <div class="navbar bg-[#90C67C] shadow-sm font-bold">
@@ -90,12 +90,12 @@
     </header>
     <main class="container mx-auto">
       <!-- card container  -->
-       <section class="flex ">
+       <section class="flex flex-col   md:flex-row   justify-between   gap-2">
         <!-- cards section  -->
-        <div class="w-2/3 flex flex-wrap gap-3">
+        <div class="w-2/4 grid grid-cols-1 md:grid-cols-2 gap-2 ">
          
           <!-- card 1 -->
-          <div class="card bg-[#67AE6E] w-96 flex shadow-sm">
+          <div class="card bg-[#67AE6E]  flex shadow-sm">
   <figure>
     <img
       src="./images/5.png"
@@ -114,7 +114,7 @@
   </div>
             </div>
             <!-- card 2  -->
-          <div class="card bg-[#67AE6E] w-96 flex shadow-sm">
+          <div class="card bg-[#67AE6E]  flex shadow-sm">
   <figure>
     <img
       src="./images/2.png"
@@ -133,7 +133,7 @@
   </div>
             </div>
             <!-- card 3  -->
-          <div class="card bg-[#67AE6E] w-96 flex shadow-sm">
+          <div class="card bg-[#67AE6E]  flex shadow-sm">
   <figure>
     <img
       src="./images/3.png"
@@ -152,7 +152,7 @@
   </div>
             </div>
             <!-- card 4 -->
-          <div class="card bg-[#67AE6E] w-96 flex shadow-sm">
+          <div class="card bg-[#67AE6E]  flex shadow-sm">
   <figure>
     <img
       src="./images/4.png"
@@ -174,8 +174,8 @@
         </div>
         <!-- calculation section  -->
 
-         <div>
-          his
+         <div class="w-2/5 bg-base-100">
+          <h3 class="text-center text-3xl my-4">Total Cost</h3>
          </div>
        </section>
     </main>

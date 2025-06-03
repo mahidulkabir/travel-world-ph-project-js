@@ -92,7 +92,7 @@
       <!-- card container  -->
        <section class="flex flex-col   md:flex-row   justify-between   gap-2">
         <!-- cards section  -->
-        <div class="w-2/4 grid grid-cols-1 md:grid-cols-2 gap-2 ">
+        <div class="lg:w-2/4 grid grid-cols-1 md:grid-cols-2 gap-2 ">
          
           <!-- card 1 -->
           <div class="card bg-[#67AE6E]  flex shadow-sm">
@@ -174,12 +174,74 @@
         </div>
         <!-- calculation section  -->
 
-         <div class="w-2/5 bg-base-100">
-          <h3 class="text-center text-3xl my-4">Total Cost</h3>
+         <div class="lg:w-2/5 bg-[#67AE6E] h-2/3">
+          <h3 class="text-center text-3xl my-4">Expenditure</h3>
+          <hr>
+          <!-- container for Expenditure -->
+          <div class="flex mt-10  gap-4 justify-center items-center p-4">
+            <!-- calculation part  -->
+             <div>
+              <div>
+                <label for="total-cost"><span class="font-semibold"> TOTAL COST:</span></label>
+                <input type="number" name="" id="total-cost">
+                
+              </div>
+              
+              <div>
+                <label for="final-cost"><span class="font-semibold"> FINAL COST:</span></label>
+                <input type="number" name="" id="final-cost">
+                
+              </div>
+             </div>
+            <!-- Transportation cost  -->
+             <div>
+              <h3 class="font-bold text-2xl">Choos Your Transport:</h3>
+              <br>
+            <button class="btn" title="Fare 200$"> Bus </button>
+            <button class="btn" title="Fare Discount 100$"> Train </button>
+            <button class="btn" title="Fare 300$"> Air </button>
+             </div>
+            
+          </div>
+
          </div>
        </section>
     </main>
-    <footer></footer>
+    <footer class="footer sm:footer-horizontal bg-[#67AE6E] text-base-content p-10 mt-40">
+      <nav>
+        <h6 class="footer-title font-bold">Services</h6>
+        <a class="link link-hover">Branding</a>
+        <a class="link link-hover">Design</a>
+        <a class="link link-hover">Marketing</a>
+        <a class="link link-hover">Advertisement</a>
+      </nav>
+      <nav>
+        <h6 class="footer-title font-bold">Company</h6>
+        <a class="link link-hover">About us</a>
+        <a class="link link-hover">Contact</a>
+        <a class="link link-hover">Jobs</a>
+        <a class="link link-hover">Press kit</a>
+      </nav>
+      <nav>
+        <h6 class="footer-title font-bold">Legal</h6>
+        <a class="link link-hover">Terms of use</a>
+        <a class="link link-hover">Privacy policy</a>
+        <a class="link link-hover">Cookie policy</a>
+      </nav>
+      <form>
+        <h6 class="footer-title font-bold">Newsletter</h6>
+        <fieldset class="w-80">
+          <label>Enter your email address</label>
+          <div class="join">
+            <input
+              type="text"
+              placeholder="username@site.com"
+              class="input input-bordered join-item" />
+            <button class="btn bg-[#E1EEBC] shadow-none border-none join-item">Subscribe</button>
+          </div>
+        </fieldset>
+      </form>
+    </footer>
 
     <script src="./script/utility.js"></script>
     <script src="./script/script.js"></script>

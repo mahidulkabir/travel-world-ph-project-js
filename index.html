@@ -11,6 +11,9 @@
       type="text/css"
     />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- css file insertaion  -->
+     <link rel="stylesheet" href="./styles/style.css">
   </head>
   <body class=" bg-green-100">
     <header>
@@ -108,7 +111,7 @@
     </h2>
     <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
     <div class="card-actions justify-end flex items-center">
-      <div > <button class="btn bg-[#E1EEBC] shadow-none border-none" > Cost : 300 $</button></div>
+      <div > <button class="btn bg-[#E1EEBC] shadow-none border-none" > Cost : <span>300</span>  $</button></div>
       <div><button class="btn bg-[#E1EEBC] shadow-none border-none add-event">Book Now!</button></div>
     </div>
   </div>
@@ -127,7 +130,7 @@
     </h2>
     <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
     <div class="card-actions justify-end flex items-center">
-      <div > <button class="btn bg-[#E1EEBC] shadow-none border-none" > Cost : 300 $</button></div>
+      <div > <button class="btn bg-[#E1EEBC] shadow-none border-none" > Cost : <span>300</span> $</button></div>
       <div><button class="btn bg-[#E1EEBC] shadow-none border-none add-event">Book Now!</button></div>
     </div>
   </div>
@@ -146,7 +149,7 @@
     </h2>
     <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
     <div class="card-actions justify-end flex items-center">
-      <div > <button class="btn bg-[#E1EEBC] shadow-none border-none" > Cost : 500 $</button></div>
+      <div > <button class="btn bg-[#E1EEBC] shadow-none border-none" > Cost : <span>500</span> $</button></div>
       <div><button class="btn bg-[#E1EEBC] shadow-none border-none add-event">Book Now!</button></div>
     </div>
   </div>
@@ -165,7 +168,7 @@
     </h2>
     <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
     <div class="card-actions justify-end flex items-center">
-      <div > <button class="btn bg-[#E1EEBC] shadow-none border-none" > Cost : 500 $</button></div>
+      <div > <button class="btn bg-[#E1EEBC] shadow-none border-none" > Cost : <span>500</span> $</button></div>
       <div><button class="btn bg-[#E1EEBC] shadow-none border-none add-event">Book Now!</button></div>
     </div>
   </div>
@@ -186,14 +189,12 @@
                 <h3 class="text-xl">Event Selected : <span id="eventIncrease"> 0 </span></h3>
               </div>
               <div>
-                <label for="total-cost"><span class="font-semibold"> TOTAL COST:</span></label>
-                <input type="text" name="" id="total-cost">
+                <p class="text-xl ">Initial Cost : </p>
                 
               </div>
               
               <div>
-                <label for="final-cost"><span class="font-semibold"> FINAL COST:</span></label>
-                <input type="text" name="" id="final-cost">
+                <p class="text-xl">Final Cost : </p>
                 
               </div>
               <div>
@@ -201,9 +202,13 @@
               </div>
              </div>
             <!-- Transportation cost  -->
-             <div class="border p-10">
-              <h3 class="font-bold text-2xl ">Choos Your Transport:</h3>
-              <br>
+             <div class="border p-10">  
+              <h3 class="font-bold text-xl ">Choose Your Transport:</h3>
+              <hr class="my-4">
+              <ol id="selected-Container">
+                                
+              </ol>
+              <hr class=" my-4">
             <button class="btn bg-[#E1EEBC] shadow-none border-none" title="Fare 200$"> Bus </button>
             <button class="btn bg-[#E1EEBC] shadow-none border-none" title="Fare Discount 100$"> Train </button>
             <button class="btn bg-[#E1EEBC] shadow-none border-none" title="Fare 300$"> Air </button>

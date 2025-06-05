@@ -1,6 +1,9 @@
 const addBtnGroup = document.getElementsByClassName('add-event');
+let count = 0;
+
 for (let addBtn of addBtnGroup){
     addBtn.addEventListener('click', function(){
-        console.log('added clickable')
+        count++;
+    setInnerTextById('eventIncrease', count);
     });
 }

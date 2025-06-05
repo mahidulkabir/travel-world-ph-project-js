@@ -177,10 +177,14 @@
          <div class="lg:w-2/5 bg-[#67AE6E] h-2/3 my-auto">
           <h3 class="text-center text-3xl my-4 font-bold font-semibold">Expenditure Budget 900$</h3>
           <hr>
+
           <!-- container for Expenditure -->
           <div class="flex mt-10  gap-4 justify-center items-center p-4 ">
             <!-- calculation part  -->
              <div class="border py-13 px-10 ">
+              <div>
+                <h3 class="text-xl">Event Selected : <span id="eventIncrease"> 0 </span></h3>
+              </div>
               <div>
                 <label for="total-cost"><span class="font-semibold"> TOTAL COST:</span></label>
                 <input type="text" name="" id="total-cost">
@@ -191,6 +195,9 @@
                 <label for="final-cost"><span class="font-semibold"> FINAL COST:</span></label>
                 <input type="text" name="" id="final-cost">
                 
+              </div>
+              <div>
+                <button class="btn mt-4 bg-[#E1EEBC] shadow-none border-none"> Book Event  </button>
               </div>
              </div>
             <!-- Transportation cost  -->

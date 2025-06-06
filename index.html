@@ -111,7 +111,7 @@
     </h2>
     <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
     <div class="card-actions justify-end flex items-center">
-      <div > <button class="btn bg-[#E1EEBC] shadow-none border-none" > Cost : <span>300</span>  $</button></div>
+      <div > <button class="btn bg-[#E1EEBC] shadow-none border-none" > Cost : <span class="price">300</span>  $</button></div>
       <div><button class="btn bg-[#5ce057] shadow-none border-none add-event">Book Now!</button></div>
     </div>
   </div>
@@ -130,7 +130,7 @@
     </h2>
     <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
     <div class="card-actions justify-end flex items-center">
-      <div > <button class="btn bg-[#E1EEBC] shadow-none border-none" > Cost : <span>300</span> $</button></div>
+      <div > <button class="btn bg-[#E1EEBC] shadow-none border-none" > Cost : <span class="price">300</span> $</button></div>
       <div><button class="btn bg-[#5ce057] shadow-none border-none add-event">Book Now!</button></div>
     </div>
   </div>
@@ -149,7 +149,7 @@
     </h2>
     <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
     <div class="card-actions justify-end flex items-center">
-      <div > <button class="btn bg-[#E1EEBC] shadow-none border-none" > Cost : <span>500</span> $</button></div>
+      <div > <button class="btn bg-[#E1EEBC] shadow-none border-none" > Cost : <span class="price">500</span> $</button></div>
       <div><button class="btn bg-[#5ce057] shadow-none border-none add-event">Book Now!</button></div>
     </div>
   </div>
@@ -168,7 +168,7 @@
     </h2>
     <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
     <div class="card-actions justify-end flex items-center">
-      <div > <button class="btn bg-[#E1EEBC] shadow-none border-none" > Cost : <span>500</span> $</button></div>
+      <div > <button class="btn bg-[#E1EEBC] shadow-none border-none" > Cost : <span class="price">500</span> $</button></div>
       <div><button class="btn bg-[#5ce057] shadow-none border-none add-event">Book Now!</button></div>
     </div>
   </div>
@@ -189,12 +189,12 @@
                 <h3 class="text-xl">Event Selected : <span id="eventIncrease"> 0 </span></h3>
               </div>
               <div>
-                <p class="text-xl ">Initial Cost : </p>
+                <p class="text-xl ">Initial Cost : <span id="init-cost"> 0 </span> </p>
                 
               </div>
               
               <div>
-                <p class="text-xl">Final Cost : </p>
+                <p class="text-xl">Final Cost : <span id="final-cost"> 0 </span> </p>
                 
               </div>
               <div>
@@ -203,16 +203,16 @@
              </div>
             <!-- Transportation cost  -->
              <div class="border p-10">  
-              <h3 class="font-bold text-xl ">Choosen Destinations:</h3>
+              <h3 class="font-bold text-xl ">Chosen Destinations:</h3>
               <hr class="my-4">
               <ol id="selected-Container">
                 
               </ol>
               <hr class=" my-4">
               <h3 class="font-bold text-xl mb-4 ">Choose Your Transport:</h3>
-            <button class="btn bg-[#E1EEBC] shadow-none border-none" title="Fare 200$"> Bus </button>
-            <button class="btn bg-[#E1EEBC] shadow-none border-none" title="Fare Discount 100$"> Train </button>
-            <button class="btn bg-[#E1EEBC] shadow-none border-none" title="Fare 300$"> Air </button>
+            <button onclick="totalCostFunction('bus')" class="btn bg-[#E1EEBC] shadow-none border-none" title="Fare 200$"> Bus </button>
+            <button onclick="totalCostFunction('train')" class="btn bg-[#E1EEBC] shadow-none border-none" title="Fare Discount 100$"> Train </button>
+            <button onclick="totalCostFunction('air')" class="btn bg-[#E1EEBC] shadow-none border-none" title="Fare 300$"> Air </button>
              </div>
             
           </div>

@@ -19,5 +19,31 @@ for (let addBtn of addBtnGroup){
         li.appendChild(p2);
         selectedContainer.appendChild(li);
 
+        // adding init cost and total cost 
+        function totalCostFunction(id){
+    
+            let costFunction = document.getElementById(id).innerText;
+            let convertedCostFunction = parseInt(costFunction);
+            let sumFunction = convertedCostFunction + parseInt(price);
+            return sumFunction;
+        }
+           setInnerTextById('init-cost', totalCostFunction('init-cost'));
+           setInnerTextById('final-cost', document.getElementById('init-cost').innerText);
+                
     });
+}
+
+function totalCostFunction(category){
+    const totalCost = document.getElementById('final-cost').innerText;
+    const convertedText = parseInt(totalCost);
+
+    if(category === 'bus'){
+        setInnerTextById('final-cost', convertedText + 200);
+    } 
+    else if(category === 'train'){
+        setInnerTextById('final-cost', convertedText - 100);
+    } 
+    if(category === 'air'){
+        setInnerTextById('final-cost', convertedText + 300);
+    } 
 }
